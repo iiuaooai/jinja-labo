@@ -1,63 +1,29 @@
-const videos = [
+import Script from "next/script";
+import TikTokEmbed from "./TikTokEmbed";
+
+const pinnedVideos = [
   {
-    emoji: "⛩️",
-    title: "明治神宮の秘密10選",
-    views: "12.3万回",
-    likes: "8,900",
-    tag: "人気",
-    tagColor: "#FF4D8D",
-    bg: "#FFE0F0",
+    url: "https://www.tiktok.com/@zinyarabo/video/7601502279384026389",
+    videoId: "7601502279384026389",
+    type: "video" as const,
   },
   {
-    emoji: "🌸",
-    title: "春の花見スポット神社ランキング",
-    views: "8.7万回",
-    likes: "6,200",
-    tag: "季節",
-    tagColor: "#FF8C42",
-    bg: "#FFF0D6",
+    url: "https://www.tiktok.com/@zinyarabo/photo/7604513934938410260",
+    videoId: "7604513934938410260",
+    type: "photo" as const,
   },
   {
-    emoji: "🦊",
-    title: "稲荷神社のキツネはなぜいるの？",
-    views: "15.1万回",
-    likes: "11,400",
-    tag: "解説",
-    tagColor: "#B388FF",
-    bg: "#EDE7FF",
-  },
-  {
-    emoji: "🎋",
-    title: "七夕の願い事が叶う神社3選",
-    views: "6.5万回",
-    likes: "4,800",
-    tag: "おすすめ",
-    tagColor: "#4CAF50",
-    bg: "#E8F5E9",
-  },
-  {
-    emoji: "🏯",
-    title: "東京の最強パワースポット",
-    views: "9.2万回",
-    likes: "7,100",
-    tag: "人気",
-    tagColor: "#FF4D8D",
-    bg: "#FFE0F0",
-  },
-  {
-    emoji: "🎍",
-    title: "初詣の正しい参拝方法",
-    views: "20.4万回",
-    likes: "15,600",
-    tag: "バズ",
-    tagColor: "#FFD700",
-    bg: "#FFFDE7",
+    url: "https://www.tiktok.com/@zinyarabo/video/7634479967769873685",
+    videoId: "7634479967769873685",
+    type: "video" as const,
   },
 ];
 
 export default function Videos() {
   return (
     <section id="videos" className="py-20 px-6" style={{ background: "#F8F0FF" }}>
+      <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload" />
+
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-2 rounded-full text-white font-bold text-sm mb-4"
@@ -67,37 +33,12 @@ export default function Videos() {
           <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
             人気の<span className="gradient-text">動画</span>たち
           </h2>
-          <p className="text-gray-600 text-lg">TikTokで話題になった動画をピックアップ！</p>
+          <p className="text-gray-600 text-lg">じんじゃらぼのピックアップコンテンツ！</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mb-10">
-          {videos.map((v) => (
-            <div
-              key={v.title}
-              className="rounded-3xl overflow-hidden card-hover cursor-pointer bg-white shadow-sm"
-            >
-              {/* サムネイル */}
-              <div
-                className="h-40 flex items-center justify-center text-7xl"
-                style={{ background: v.bg }}
-              >
-                {v.emoji}
-              </div>
-
-              <div className="p-4">
-                <span
-                  className="inline-block px-3 py-1 rounded-full text-white text-xs font-bold mb-2"
-                  style={{ backgroundColor: v.tagColor }}
-                >
-                  {v.tag}
-                </span>
-                <h3 className="font-black text-gray-800 text-sm leading-snug mb-3">{v.title}</h3>
-                <div className="flex gap-4 text-xs text-gray-500 font-semibold">
-                  <span>👁️ {v.views}</span>
-                  <span>❤️ {v.likes}</span>
-                </div>
-              </div>
-            </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 items-start">
+          {pinnedVideos.map((v) => (
+            <TikTokEmbed key={v.videoId} url={v.url} videoId={v.videoId} type={v.type} />
           ))}
         </div>
 
