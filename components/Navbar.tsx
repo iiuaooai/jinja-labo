@@ -11,7 +11,7 @@ export default function Navbar() {
         <a href="#videos" className="hover:text-pink-500 transition-colors">動画</a>
         <a href="#community" className="hover:text-pink-500 transition-colors">コミュニティ</a>
         <a
-          href="https://www.tiktok.com"
+          href="https://www.tiktok.com/@zinyarabo?_r=1&_t=ZS-96oXOPXU9MS"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-2 rounded-full text-white font-bold transition-all hover:scale-105"

@@ -1,5 +1,5 @@
 const links = [
-  { label: "🎵 TikTok", href: "https://www.tiktok.com" },
+  { label: "🎵 TikTok", href: "https://www.tiktok.com/@zinyarabo?_r=1&_t=ZS-96oXOPXU9MS" },
   { label: "📸 Instagram", href: "https://www.instagram.com" },
   { label: "🐦 X (Twitter)", href: "https://twitter.com" },
 ];

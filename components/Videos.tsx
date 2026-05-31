@@ -103,7 +103,7 @@ export default function Videos() {
 
         <div className="text-center">
           <a
-            href="https://www.tiktok.com"
+            href="https://www.tiktok.com/@zinyarabo?_r=1&_t=ZS-96oXOPXU9MS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-black text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"

@@ -41,7 +41,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://www.tiktok.com"
+            href="https://www.tiktok.com/@zinyarabo?_r=1&_t=ZS-96oXOPXU9MS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-black text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95"
