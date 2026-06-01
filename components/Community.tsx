@@ -44,8 +44,12 @@ export default function Community() {
         </div>
 
         {/* CTA */}
-        <div className="rounded-3xl p-8 md:p-12 text-center"
+        <div className="rounded-3xl p-8 md:p-12 text-center relative overflow-hidden"
           style={{ background: "linear-gradient(135deg, #FF4D8D, #FF8C42, #FFD700)" }}>
+          {/* キツネちゃん（左下） */}
+          <div className="absolute bottom-0 left-0 w-32 md:w-44 pointer-events-none select-none">
+            <img src="/kitsune-red.png" alt="KITSUNEちゃん" className="object-contain drop-shadow-xl" />
+          </div>
           <div className="text-6xl mb-4 animate-wiggle inline-block">⛩️</div>
           <h3 className="text-3xl font-black text-white mb-3">
             今すぐ参加しよう！

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const FORTUNES = [
   {
@@ -104,6 +105,19 @@ export default function Hero() {
         style={{ background: "radial-gradient(circle, #B388FF, #FF4D8D)", animationDelay: "1s" }} />
       <div className="absolute bottom-20 left-12 w-16 h-16 rounded-full opacity-25 animate-bounce-slow"
         style={{ background: "radial-gradient(circle, #FFD700, #FF8C42)", animationDelay: "0.5s" }} />
+
+      {/* キツネちゃん（右下に控えめに） */}
+      <div className="absolute bottom-0 right-0 w-48 md:w-64 pointer-events-none select-none"
+        style={{ animation: "float 4s ease-in-out infinite" }}>
+        <Image
+          src="/kitsune-pink.png"
+          alt="KITSUNEちゃん"
+          width={256}
+          height={400}
+          className="object-contain drop-shadow-xl"
+          priority
+        />
+      </div>
 
       <style>{`
         @keyframes omikuji-shake {

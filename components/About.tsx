@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const stats = [
   { emoji: "🎥", value: "100+", label: "動画" },
   { emoji: "👥", value: "1万+", label: "フォロワー" },
@@ -58,6 +60,18 @@ export default function About() {
               <p className="text-gray-600 leading-relaxed">{f.desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* キツネちゃん吹き出し */}
+        <div className="flex items-end gap-4 mb-10">
+          <div className="w-28 shrink-0">
+            <Image src="/kitsune-miko.png" alt="KITSUNEちゃん" width={112} height={180} className="object-contain drop-shadow-md" />
+          </div>
+          <div className="relative bg-white rounded-3xl rounded-bl-none px-5 py-4 shadow-md border border-pink-100 text-sm font-bold text-gray-700 leading-relaxed">
+            神社って難しそうに見えるけど、知れば知るほど面白いんだよ！一緒に探究しよ〜🦊✨
+            <div className="absolute -bottom-3 left-0 w-4 h-4 bg-white border-b border-l border-pink-100"
+              style={{ clipPath: "polygon(0 0, 100% 0, 0 100%)" }} />
+          </div>
         </div>
 
         {/* 実績数字 */}
