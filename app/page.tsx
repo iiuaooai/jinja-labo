@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Videos from "@/components/Videos";
+import BlogPreview from "@/components/BlogPreview";
 import Community from "@/components/Community";
 import Footer from "@/components/Footer";
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero />
         <About />
         <Videos />
+        <BlogPreview />
         <Community />
         <Footer />
       </main>

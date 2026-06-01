@@ -7,9 +7,10 @@ export default function Navbar() {
         <span className="gradient-text">じんじゃらぼ</span>
       </a>
       <div className="hidden sm:flex items-center gap-6 text-sm font-bold text-gray-600">
-        <a href="#about" className="hover:text-pink-500 transition-colors">About</a>
-        <a href="#videos" className="hover:text-pink-500 transition-colors">動画</a>
-        <a href="#community" className="hover:text-pink-500 transition-colors">コミュニティ</a>
+        <a href="/#about" className="hover:text-pink-500 transition-colors">About</a>
+        <a href="/#videos" className="hover:text-pink-500 transition-colors">動画</a>
+        <a href="/blog" className="hover:text-pink-500 transition-colors">ブログ</a>
+        <a href="/#community" className="hover:text-pink-500 transition-colors">コミュニティ</a>
         <a
           href="https://www.tiktok.com/@zinyarabo?_r=1&_t=ZS-96oXOPXU9MS"
           target="_blank"
