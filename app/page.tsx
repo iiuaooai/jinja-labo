@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Videos from "@/components/Videos";
 import BlogPreview from "@/components/BlogPreview";
 import ShrinePreview from "@/components/ShrinePreview";
+import Omikuji from "@/components/Omikuji";
 import Community from "@/components/Community";
 import Footer from "@/components/Footer";
 
@@ -33,6 +34,7 @@ export default function Home() {
         <Videos />
         <BlogPreview />
         <ShrinePreview />
+        <Omikuji />
         <Community />
         <Footer />
       </main>
