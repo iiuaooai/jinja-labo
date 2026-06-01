@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Videos from "@/components/Videos";
 import BlogPreview from "@/components/BlogPreview";
+import ShrinePreview from "@/components/ShrinePreview";
 import Community from "@/components/Community";
 import Footer from "@/components/Footer";
 
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Videos />
         <BlogPreview />
+        <ShrinePreview />
         <Community />
         <Footer />
       </main>
